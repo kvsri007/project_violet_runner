@@ -6,7 +6,7 @@ on:
   workflow_dispatch:      
 
 jobs:
-  run-word-drop:
+  run_word_drop:
     runs-on: ubuntu-latest
 
     steps:
