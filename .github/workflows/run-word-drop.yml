@@ -27,11 +27,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Create credentials.json
-        run: echo "${{ secrets.GOOGLE_CREDENTIALS_JSON }}" > credentials.json
+        run: echo '${{ secrets.GOOGLE_CREDENTIALS_JSON }}' > credentials.json
         working-directory: violet
 
       - name: Create token.json
-        run: echo "${{ secrets.GOOGLE_TOKEN_JSON }}" > token.json
+        run: echo '${{ secrets.GOOGLE_TOKEN_JSON }}' > token.json
         working-directory: violet
 
       - name: Run the script
